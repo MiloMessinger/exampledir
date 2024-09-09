@@ -4,7 +4,13 @@ import java.nio.file.*;
 import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
+    private static void printFileSize (String filePath){
+        File file = new File(filePath);
+        System.out.println(file.length());
+    }
     public static void main(String[] args) {
+        //printFileSize("MyFileWriter.java");
+        
         String secretPassword = "secretpassword";
         String secretData = "sean ozalpasan (idk what else to put here)";
         //Create a secretpassword txt file in the root directory
