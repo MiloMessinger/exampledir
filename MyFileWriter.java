@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
     public static void main(String[] args) {
-        String secretPassword = "insert bank password";
+        String secretPassword = "secretpassword";
         String secretData = "sean ozalpasan (idk what else to put here)";
         //Create a secretpassword txt file in the root directory
         try (BufferedOutputStream outputStream = new BufferedOutputStream(new FileOutputStream(".hiddenkey.txt"))){
@@ -15,7 +15,7 @@ public class MyFileWriter {
         catch (IOException e){
             e.printStackTrace();
         }
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(new File("/home/milomessinger/exampledir/.secret/secret.txt")))){
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(new File("/home/milomessinger/exampledir/.secret/secret.dat")))){
         writer.write (secretData);
         writer.close();
         }
