@@ -8,6 +8,11 @@ public class MyFileWriter {
         File file = new File(filePath);
         System.out.println(file.length());
     }
+
+    public static void printTotalFileSize (String... files){
+        System.out.println ("Total Size of all files: ... TBD ... Bytes");
+    }
+
     public static void main(String[] args) {
         //printFileSize("MyFileWriter.java");
         
