@@ -5,7 +5,6 @@ import java.nio.charset.StandardCharsets;
 
 public class MyFileWriter {
     
-    //milo poopy butt
     
     private static void printFileSize (String filePath){
         File file = new File(filePath);
