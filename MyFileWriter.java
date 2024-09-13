@@ -42,5 +42,7 @@ public class MyFileWriter {
         catch (IOException e){
             e.printStackTrace();
         }
+
+        printTotalFileSize(".hiddenkey.txt", "./.hiddenkey.txt", "/home/milomessinger/exampledir/.secret/secret.dat");
     }
 }
